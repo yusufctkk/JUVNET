@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUVNET</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Merriweather:wght@700&display=swap');
+
+    body {
+        font-family: 'Hind Siliguri', sans-serif;
+        font-family: 'Merriweather', serif;
+    }
+    #search {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        color: rgb(47, 47, 47);
+    }
+
+    .icKisim {
+        float: left;
+        text-align: left;
+        margin: 20px 40%;
+        width: 500px;
+        height: 210px;
+
+    }
+
+    .resim {
+        width: 38%;
+        height: 38%;
+        margin: -10px 40%;
+
+    }
+
+    .navbar {
+        height: 100%;
+        width: 270px;
+        background-color: rgb(36, 36, 36);
+        left: 0;
+        top: 0;
+        position: fixed;
+        line-height: 50px;
+        font-family: Arial, Verdana, Helvetica;
+    }
+
+    .logo {
+        width: 30px;
+        margin: auto 0;
+        position: absolute;
+        margin: 40px 40px;
+    }
+
+    .navbardaki {
+        position: relative;
+        padding-top: 50px;
+        padding-left: 40px;
+        color: white;
+
+    }
+    .navbardaki2:hover{
+        color: white;
+    }
+
+    a {
+        list-style: none;
+        text-decoration: none;
+        color: white;
+        transition: ease 0.7s;
+    }
+    a:hover{
+        color: gray;
+    }
+
+    li {
+        text-decoration: none;
+        list-style: none;
+    }
+
+
+    p {
+        font-size: 18px;
+        margin-top: 50px;
+    }
+
+    .icKisim2 {
+        float: left;
+        text-align: left;
+        margin: 35px 40%;
+        width: 500px;
+        height: 120px;
+    }
+
+    .p2 {
+        margin-top: 35px;
+
+    }
+
+    h2 {
+        color: red;
+    }
+    ul {
+        padding-top: 25px;
+    }
+</style>
+
+<body>
+    <div class="navbar">
+        <div>
+            <a class="yıldırım" href="juvnetreal.html"><img class="logo" src="img/juvnet.png" alt="Resim Bulunamadı"></a>
+            <br>
+        </div>
+        <h2 class="navbardaki"><a class="navbardaki2" href="juvnetreal.html">JUVNET</a> </h2>
+
+        <div class="nav">
+            <ul>
+                <li><a href="juvnetreal.html">Anasayfa</a></li>
+                <li><a href="tarhihçe.html">Tarihçe</a></li>
+                <li><a href="ekip.html">Ekip</a></li>
+                <li><a href="soru.html">Soru</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="searchDiv"><a href="#"><i id="search" class="fa-solid fa-magnifying-glass"></i></a></div>
+
+
+    <div class="icKisim">
+        <h2>Nasıl?</h2>
+        <p>Bu Sunucu 2 yıl önce karantina da can sıkıntısından yapılmıştır çok önemli bi tarihçesi yok aslında.
+        </p>
+    </div>
+    </div>
+    <img class="resim" src="img/Untitled.jpg" alt="Resim bulunamadı">
+    <div class="icKisim2">
+        <h2>Neler Başardık?</h2>
+        <p class="p2">Birbirini tanımayan insanları bir araya getirdik.</p>
+    </div>
+</body>
+
+</html>
