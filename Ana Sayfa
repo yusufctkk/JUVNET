@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUVNET</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Merriweather:wght@700&display=swap');
+    
+    
+    
+    .navbardaki2:hover{
+        color: white;
+    }
+
+    body {
+        background-size: 3000px;
+        font-family: 'Hind Siliguri', sans-serif;
+        font-family: 'Merriweather', serif;
+    }
+
+    h1 {
+        font-family: 'Hind Siliguri', sans-serif;
+        font-family: 'Merriweather', serif;
+
+    }
+
+    .container {
+        position: relative;
+        background-image: url(img/juvnetArka.jpg);
+        width: calc(100% - 250px);
+        height: 100vh;
+        background-size: cover;
+        background-position: center center;
+        left: 255px;
+        bottom: 9px;
+        display: flex;
+        flex: 1;
+        background-repeat: no-repeat;
+    }
+
+    .logo {
+        width: 30px;
+        margin: auto 0;
+        position: absolute;
+        margin: 40px 40px;
+    }
+
+    .navbar {
+        height: 100%;
+        width: 270px;
+        background-color: rgb(36, 36, 36);
+        left: 0;
+        top: 0;
+        position: fixed;
+        line-height: 50px;
+        font-family: Arial, Verdana, Helvetica;
+    }
+
+    .yazı {
+        position: absolute;
+        align-items: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    a {
+        list-style: none;
+        text-decoration: none;
+        color: white;
+        transition: ease 0.7s;
+    }
+
+    li {
+        text-decoration: none;
+        list-style: none;
+    }
+
+    .navbardaki {
+        position: relative;
+        padding-top: 50px;
+        padding-left: 40px;
+        color: white;
+
+    }
+    .navbardaki:hover{
+        color: white;
+    }
+
+    ul {
+        padding-top: 25px;
+    }
+
+    h1 {
+        color: white;
+        font-size: 55.0pt;
+    }
+
+    em {
+        color: white;
+        font-size: 16px;
+        padding: 35px;
+    }
+
+    a:hover {
+        color: gray;
+    }
+
+    #search {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+    }
+
+    #ok {
+        position: absolute;
+        bottom: 10px;
+        width: 40px;
+        right: 570px;
+        transform: translateX(-50%);
+    }
+
+    .container2 {
+        position: relative;
+        text-align: center;
+        padding-left: 270px;
+        margin-top: 150px;
+    }
+
+    .baslik2 {
+        text-align: center;
+        padding-bottom: 140px;
+        font-size: 27px;
+    }
+
+    .lolresim {
+        display: flex;
+        position: relative;
+        width: 266px;
+        height: 258px;
+        background-size: cover;
+        background-position: center;
+        float: left;
+    }
+
+    .mcresim {
+        display: flex;
+        position: relative;
+        width: 266px;
+        height: 258px;
+        background-size: cover;
+        background-position: center;
+        float: left;
+    }
+
+    .oyunlar {
+        display: flex;
+    }
+
+    .lol {
+        float: left;
+        margin-right: 50px;
+    }
+
+    .lolyazi {
+        width: 200px;
+        height: 200px;
+        float: left;
+        padding-left: 20px;
+    }
+
+    .mcyazi {
+        width: 200px;
+        height: 200px;
+        float: left;
+    }
+
+    .amongusresim {
+        display: flex;
+        position: relative;
+        width: 266px;
+        height: 258px;
+        background-size: cover;
+        background-position: center;
+        float: left;
+    }
+
+    .amongusyazi {
+        width: 200px;
+        height: 200px;
+        float: left;
+    }
+
+    .valorantresim {
+        display: flex;
+        position: relative;
+        width: 266px;
+        height: 258px;
+        background-size: cover;
+        background-position: center;
+        float: left;
+    }
+
+    .valorantyazi {
+        width: 200px;
+        height: 200px;
+        float: left;
+    }
+
+    .oyunlar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .lol,
+    .mc,
+    .amongus,
+    .valorant {
+        margin-bottom: 20px;
+    }
+
+    .lolresim,
+    .mcresim,
+    .amongusresim,
+    .valorantresim {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .mcparagraf,
+    .amongusparagraf,
+    .valorantparagraf {
+
+        text-align: left;
+        padding-left: 20px;
+    }
+    .mcbaslik,
+    .amongusbaslik,
+    .valorantbaslik {
+
+        text-align: left;
+        padding-left: 20px;
+    }
+    .lolbaslik{
+        text-align: left;
+        padding-left: 7px;
+    }
+    .lolparagraf{
+        text-align: left;
+        padding-left: 7px;
+    }
+
+    .lolminecraft {
+        display: flex;
+    }
+
+    .amongusvalorant {
+        display: flex;
+    }
+
+    .amongus {
+        margin-right: 50px;
+
+    }
+
+    .odalar {
+        align-items: center;
+        padding-left: 35px;
+        padding-top: 100px;
+    }
+
+    .film,
+    .sohbet {
+        float: left;
+        padding: 10px;
+        display: flex;
+        width: 353px;
+        height: 353px;
+        margin: 10px;
+        flex-direction: column;
+    }
+    .sohbet{
+        width: 349px;
+        height: 349px;
+    }
+    
+
+    .müzik {
+        float: left;
+        padding: 10px;
+        display: flex;
+        width: 327.5px;
+        height: 327.5px;
+        margin: 10px;
+        flex-direction: column;
+    }
+
+    .filmparagraf,
+    .müzikparagraf,
+    .sohbetparagraf {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: initial;
+        padding-top: 25px;
+        color: rgb(84, 84, 84);
+    }
+
+    .filmbaslik,
+    .müzikbaslik,
+    .sohbetbaslik {
+        padding-top: 3px;
+        flex-direction: column;
+        align-items: center;
+        display: initial;
+
+    }
+
+    .discord {
+        position: absolute;
+        right: 318px;
+        top: 1650px;
+        
+    }
+    
+
+    .juvnetbuton {
+        display: inline-block;
+        border: 1px solid red;
+        font-size: 20px;
+        justify-content: center;
+        background-color: red;
+        border-radius: 5px;
+        text-align: center;
+        padding: 5px 255px;
+        transition: ease 0.1s;
+    }
+    .juvnetbuton:hover{
+        color: white;
+        border: 2px solid red;
+    }
+
+    .odalarbaslik {
+
+        margin-top: 100px;
+        font-size: 45px;
+    }
+    p{
+        color: rgb(84, 84, 84);
+    }
+    
+</style>
+
+<body>
+
+
+    <i id="search" class="fa-sharp fa-solid fa-magnifying-glass"></i>
+    </div>
+    <div class="container">
+        <div class="searchDiv"><a href="#"><i id="search" class="fa-solid fa-magnifying-glass"></i></a></div>
+        <div class="yazı">
+            <h1>JUVNET</h1>
+            <em class="paragraf">Oyun delilerinin toplandığı yer...</em>
+        </div>
+    </div>
+    <div class="navbar">
+        <div>
+            <a class="yıldırım" href="juvnetreal.html"><img class="logo" src="img/juvnet.png" alt="Resim Bulunamadı"></a>
+            <br>
+        </div>
+        <h2 class="navbardaki"><a class="navbardaki2" href="juvnetreal.html">JUVNET</a> </h2>
+
+        <div class="nav">
+            <ul>
+                <li><a href="juvnetreal.html">Anasayfa</a></li>
+                <li><a href="tarhihçe.html">Tarihçe</a></li>
+                <li><a href="ekip.html">Ekip</a></li>
+                <li><a href="soru.html">Soru</a></li>
+            </ul>
+        </div>
+        
+    </div>
+    <div id="ok" class="scroll-down">
+        <a href="#scroll-to">
+            <span><i class="fa-solid fa-arrow-down"></i></span>
+        </a>
+    </div>
+
+    <div class="container2">
+        
+        <div class="baslik2">
+            <h2><strong class="birlikte">Birlikte Oynadığımız Oyunlar</strong></h2>
+        </div>
+        <div class="oyunlar">
+            <div class="lolminecraft">
+                <div class="lol">
+                    <img class="lolresim" src="img/59876c364205d-932x620.jpg" alt="LoL"
+                        style="height: 258px; width: 266px;">
+                    <div class="lolyazi">
+                        <h3 class="lolbaslik">1-) Leauge Of Legends</h3>
+                        <p class="lolparagraf">Herkesin sevdiği dünya genelinde de üstünlüğünü korumuş bir oyun olan
+                            League
+                            of
+                            Legends oyunumuz tabi
+                            ki
+                            olmazsa olmaz.</p>
+                    </div>
+                    
+                </div>
+                <div class="mc"><img class="mcresim" src="img/wp7414755.jpg" alt="Minecraft">
+                    <div class="mcyazi">
+                        <h3 class="mcbaslik">2-) Minecraft</h3>
+                        <p class="mcparagraf">Minecraft sevenler de burda mı!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="amongusvalorant">
+                <div class="amongus">
+                    <img class="amongusresim" src="img/Among-Us-Game-4K-Ultra-HD-Mobile-Wallpaper-scaled.jpg"
+                        alt="Among Us">
+                    <div class="amongusyazi">
+                        <h3 class="amongusbaslik">
+                            3-) Among Us
+                        </h3>
+                        <p class="amongusparagraf">Grafikleri muhteşem olmasa da oyunda ki gizemiyle kendini üst
+                            sıralara
+                            çıkaran Among Us'ta burada!
+
+                        </p>
+                    </div>
+
+                </div>
+                <div class="valorant">
+                    <img src="img/wallpapersden.com_valorant-gaming-character_2888x1943.jpg" alt="Valorant"
+                        class="valorantresim">
+                    <div class="valorantyazi">
+                        <h3 class="valorantbaslik">4-) valorant</h3>
+                        <p class="valorantparagraf">Riot Games' LoL(Leauge Of Legends) den sonra çıkardığı en viral oyun
+                            da
+                            olmazsa olmaz
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <h2 class="odalarbaslik">Odalarımız</h2>
+        </div>
+        <div class="odalar">
+            <div class="film">
+
+                <img src="img/movies-film-reel-technology-projector-8mm-wallpaper-preview.jpg" alt="Film">
+                <div class="filmbaslik">
+                    <h3>Film İzleme Odası</h3>
+                </div>
+                <div class="filmparagraf">Arkadaşlarınızla ve yeni tanışacağınız insanlarla nerde olursanız olun film
+                    izleme fikri kime cazib gelmez ki!</div>
+            </div>
+
+            <div class="müzik">
+                <img src="img/download.jpg" alt="Müzik">
+                <div class="müzikbaslik">
+                    <h3>Müzik Dinleme Odası</h3>
+                </div>
+                <div class="müzikparagraf">
+                    Aynı müziği aynı anda arkadaşlarınızla veya yeni tanışacağınız insanlarla dinlemek! Ne kadar hoş
+                    bir
+                    aktivite.
+                </div>
+            </div>
+            <div class="sohbet"> <img src="img/9133c83936ed0df4436908ea1a6aa928.jpg" alt="Sohbet">
+                <div class="sohbetbaslik">
+                    <h3>Sohbet Odası</h3>
+                </div>
+                <div class="sohbetparagraf">Sesli kanalarda arkadaşlarınızla veya yeni tanışacağınız insanlarla
+                    dilediğiniz
+                    konuda sohbette edebilirsiniz.
+                </div>
+            </div>
+        </div>
+        <div class="discord"><a href="https://discord.gg/22FmcqzynJ" class="juvnetbuton" target="_blank">JUVNET</a>
+            <h4>Hadi sizde Discord sunucumuza gelin!!!</h4>
+        </div>
+    </div>
+
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+const menuNav = document.querySelector('nav ul');
+
+menuToggle.addEventListener('click', function() {
+  menuNav.classList.toggle('show');
+});
+
+        const okButton = document.getElementById('ok');
+        const container2 = document.querySelector('.container2');
+
+        okButton.addEventListener('click', () => {
+            container2.scrollIntoView({ behavior: 'smooth' });
+        });
+
+        
+
+    </script>
+</body>
+
+
+</html>
